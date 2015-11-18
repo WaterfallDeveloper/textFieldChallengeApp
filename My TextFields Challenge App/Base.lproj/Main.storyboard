@@ -56,6 +56,11 @@
                             <constraint firstItem="9JL-9i-aOS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="53" id="qBu-Dx-n6V"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cashTextField" destination="aJo-Sw-1sT" id="vFq-py-bjz"/>
+                        <outlet property="lockedTextField" destination="rY5-Pi-U7F" id="kjS-Oe-b6R"/>
+                        <outlet property="zipCodeTextField" destination="9JL-9i-aOS" id="FtI-7g-fsr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
