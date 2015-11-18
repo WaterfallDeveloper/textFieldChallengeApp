@@ -18,42 +18,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9JL-9i-aOS">
-                                <rect key="frame" x="170" y="73" width="261" height="30"/>
+                                <rect key="frame" x="190" y="74" width="220" height="30"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="261" id="Ll6-vH-Ziu"/>
+                                    <constraint firstAttribute="width" constant="220" id="Ll6-vH-Ziu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aJo-Sw-1sT">
-                                <rect key="frame" x="170" y="127" width="261" height="30"/>
+                                <rect key="frame" x="190" y="128" width="220" height="30"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="261" id="jcb-QK-8gK"/>
+                                    <constraint firstAttribute="width" constant="220" id="jcb-QK-8gK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rY5-Pi-U7F">
-                                <rect key="frame" x="170" y="181" width="261" height="30"/>
+                                <rect key="frame" x="190" y="182" width="220" height="30"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="261" id="vn4-zA-t6w"/>
+                                    <constraint firstAttribute="width" constant="220" id="vn4-zA-t6w"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kFe-sS-IuK">
+                                <rect key="frame" x="276" y="231" width="51" height="31"/>
+                                <animations/>
+                            </switch>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aJo-Sw-1sT" firstAttribute="leading" secondItem="rY5-Pi-U7F" secondAttribute="leading" id="1pj-bp-40f"/>
+                            <constraint firstItem="kFe-sS-IuK" firstAttribute="leading" secondItem="rY5-Pi-U7F" secondAttribute="trailing" constant="-134" id="4MS-4r-ivB"/>
+                            <constraint firstItem="kFe-sS-IuK" firstAttribute="top" secondItem="rY5-Pi-U7F" secondAttribute="top" constant="49" id="8u1-NQ-5ct"/>
                             <constraint firstItem="rY5-Pi-U7F" firstAttribute="top" secondItem="aJo-Sw-1sT" secondAttribute="bottom" constant="24" id="J9S-n5-eAL"/>
                             <constraint firstItem="9JL-9i-aOS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UpE-pK-8m2"/>
                             <constraint firstItem="aJo-Sw-1sT" firstAttribute="top" secondItem="9JL-9i-aOS" secondAttribute="bottom" constant="24" id="ZkR-Yg-ztq"/>
                             <constraint firstItem="aJo-Sw-1sT" firstAttribute="leading" secondItem="9JL-9i-aOS" secondAttribute="leading" id="ouS-8q-7VI"/>
-                            <constraint firstItem="9JL-9i-aOS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="53" id="qBu-Dx-n6V"/>
+                            <constraint firstItem="9JL-9i-aOS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="qBu-Dx-n6V"/>
                         </constraints>
                     </view>
                     <connections>
