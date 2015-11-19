@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     // text field delegates
     let zipCodeDelegate = ZipCodeDelegate()
-//    let cashDelegate = CashDelegate()
+    let cashDelegate = CashDelegate()
 //    let lockedTextDelegate = LockedTextDelegate()
     
     
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         
         // TODO: assign delegates
         zipCodeTextField.delegate = zipCodeDelegate
-//        cashTextField.delegate = cashDelegate
+        cashTextField.delegate = cashDelegate
 //        lockedTextDelegate.locked = !lockTextField.on
 //        lockTextField.delegate = lockedTextDelegate
         
