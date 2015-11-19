@@ -12,6 +12,14 @@ import UIKit
 class LockedTextDelegate: NSObject, UITextFieldDelegate {
     var locked = true
     
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        return !locked
+    }
+    
+    func textFieldShouldClear(textField: UITextField) -> Bool {
+        return !locked
+    }
+    
     func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
         return !locked
     }
