@@ -13,16 +13,18 @@ class ViewController: UIViewController {
     // outlets
     @IBOutlet weak var zipCodeTextField: UITextField!
     @IBOutlet weak var cashTextField: UITextField!
-    @IBOutlet weak var lockedTextField: UITextField!
-    @IBOutlet weak var lockTextField: UISwitch!
+    @IBOutlet weak var switchTextField: UITextField!
+    @IBOutlet weak var lockingSwitch: UISwitch!
     
     // text field delegates
     let zipCodeDelegate = ZipCodeDelegate()
     let cashDelegate = CashDelegate()
-//    let lockedTextDelegate = LockedTextDelegate()
+    let lockedTextDelegate = LockedTextDelegate()
     
-    
-    // TODO: write all delegates
+    @IBAction func switchChangedState(sender: UISwitch) {
+        lockedTextDelegate.locked = !lockingSwitch.on
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,9 +32,8 @@ class ViewController: UIViewController {
         // TODO: assign delegates
         zipCodeTextField.delegate = zipCodeDelegate
         cashTextField.delegate = cashDelegate
-//        lockedTextDelegate.locked = !lockTextField.on
-//        lockTextField.delegate = lockedTextDelegate
-        
+        switchTextField.delegate = lockedTextDelegate
+        lockedTextDelegate.locked = !lockingSwitch.on
         
     }
 

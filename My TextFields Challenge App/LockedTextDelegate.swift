@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import UIKit
+
+class LockedTextDelegate: NSObject, UITextFieldDelegate {
+    var locked = true
+    
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        return !locked
+    }
+}
