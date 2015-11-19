@@ -14,6 +14,9 @@
 		D82969301BFCBABE00C761F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D829692E1BFCBABE00C761F8 /* LaunchScreen.storyboard */; };
 		D829693B1BFCBABE00C761F8 /* My_TextFields_Challenge_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829693A1BFCBABE00C761F8 /* My_TextFields_Challenge_AppTests.swift */; };
 		D82969461BFCBABE00C761F8 /* My_TextFields_Challenge_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82969451BFCBABE00C761F8 /* My_TextFields_Challenge_AppUITests.swift */; };
+		D82969551BFCD75200C761F8 /* ZipCodeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82969541BFCD75200C761F8 /* ZipCodeDelegate.swift */; };
+		D82969571BFCD77D00C761F8 /* CashDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82969561BFCD77D00C761F8 /* CashDelegate.swift */; };
+		D82969591BFCD78900C761F8 /* LockedTextDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82969581BFCD78900C761F8 /* LockedTextDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		D82969411BFCBABE00C761F8 /* My TextFields Challenge AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My TextFields Challenge AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82969451BFCBABE00C761F8 /* My_TextFields_Challenge_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_TextFields_Challenge_AppUITests.swift; sourceTree = "<group>"; };
 		D82969471BFCBABE00C761F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D82969541BFCD75200C761F8 /* ZipCodeDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeDelegate.swift; sourceTree = "<group>"; };
+		D82969561BFCD77D00C761F8 /* CashDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashDelegate.swift; sourceTree = "<group>"; };
+		D82969581BFCD78900C761F8 /* LockedTextDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockedTextDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		D82969241BFCBABE00C761F8 /* My TextFields Challenge App */ = {
 			isa = PBXGroup;
 			children = (
+				D82969531BFCD73200C761F8 /* Text Field Delegates */,
 				D82969251BFCBABE00C761F8 /* AppDelegate.swift */,
 				D82969271BFCBABE00C761F8 /* ViewController.swift */,
 				D82969291BFCBABE00C761F8 /* Main.storyboard */,
@@ -123,6 +130,16 @@
 				D82969471BFCBABE00C761F8 /* Info.plist */,
 			);
 			path = "My TextFields Challenge AppUITests";
+			sourceTree = "<group>";
+		};
+		D82969531BFCD73200C761F8 /* Text Field Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				D82969541BFCD75200C761F8 /* ZipCodeDelegate.swift */,
+				D82969561BFCD77D00C761F8 /* CashDelegate.swift */,
+				D82969581BFCD78900C761F8 /* LockedTextDelegate.swift */,
+			);
+			name = "Text Field Delegates";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +274,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D82969281BFCBABE00C761F8 /* ViewController.swift in Sources */,
+				D82969551BFCD75200C761F8 /* ZipCodeDelegate.swift in Sources */,
+				D82969591BFCD78900C761F8 /* LockedTextDelegate.swift in Sources */,
 				D82969261BFCBABE00C761F8 /* AppDelegate.swift in Sources */,
+				D82969571BFCD77D00C761F8 /* CashDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

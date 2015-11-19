@@ -10,20 +10,31 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // outlets
     @IBOutlet weak var zipCodeTextField: UITextField!
     @IBOutlet weak var cashTextField: UITextField!
     @IBOutlet weak var lockedTextField: UITextField!
+    @IBOutlet weak var lockTextField: UISwitch!
+    
+    // text field delegates
+    let zipCodeDelegate = ZipCodeDelegate()
+//    let cashDelegate = CashDelegate()
+//    let lockedTextDelegate = LockedTextDelegate()
+    
+    
+    // TODO: write all delegates
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // TODO: assign delegates
+        zipCodeTextField.delegate = zipCodeDelegate
+//        cashTextField.delegate = cashDelegate
+//        lockedTextDelegate.locked = !lockTextField.on
+//        lockTextField.delegate = lockedTextDelegate
+        
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
