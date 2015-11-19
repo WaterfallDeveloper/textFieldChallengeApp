@@ -21,13 +21,19 @@ class CashDelegate:NSObject, UITextFieldDelegate {
         }
         
         let dollarInt = cashInPennies/100
-        let dollarString: String = "$" + "\(dollarInt)" + "."
-        let centsString: String =  String(cashInPennies % 100)
+        let dollarString = "$" + "\(dollarInt)" + "."
+        let centsAmount = cashInPennies % 100
+        var zero = ""
+        if centsAmount < 10 {
+            zero = "0"
+        }
+        
+        let centsString = "\(zero)\(centsAmount)"
         let finalString = dollarString + centsString
         
         textField.text = finalString
         
-        return true
+        return false
     }
     
     func textFieldDidBeginEditing(textField: UITextField) {
