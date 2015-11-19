@@ -17,6 +17,7 @@ class ZipCodeDelegate: NSObject, UITextFieldDelegate {
         var newText = textField.text! as NSString
         newText = newText.stringByReplacingCharactersInRange(range, withString: string)
         
+        // allow "" to pass, otherwise check if the entered key is a number and that the resulting string length 5 max
         var changeText = newText == ""
         if !changeText {
             if let _ = Int(newText as String) {
