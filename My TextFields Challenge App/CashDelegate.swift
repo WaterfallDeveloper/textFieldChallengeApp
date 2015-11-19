@@ -13,13 +13,12 @@ class CashDelegate:NSObject, UITextFieldDelegate {
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         
-        // remove $ sign and save new string
-//        let newText = String(textField.text!.characters.dropFirst())
-        
+        // if number passed, concatenate with existing number of pennies
         if Int(string) != nil {
            cashInPennies = Int("\(cashInPennies)\(string)")!
         }
         
+        // now format the pennies in the right format, e.g. $123.45
         let dollarInt = cashInPennies/100
         let dollarString = "$" + "\(dollarInt)" + "."
         let centsAmount = cashInPennies % 100

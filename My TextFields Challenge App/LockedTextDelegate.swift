@@ -12,6 +12,8 @@ import UIKit
 class LockedTextDelegate: NSObject, UITextFieldDelegate {
     var locked = true
     
+    // just allow editing if the switch is turned on
+    
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         return !locked
     }

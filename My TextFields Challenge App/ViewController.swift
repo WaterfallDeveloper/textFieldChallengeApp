@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     let cashDelegate = CashDelegate()
     let lockedTextDelegate = LockedTextDelegate()
     
+    // catch switch status change event
     @IBAction func switchChangedState(sender: UISwitch) {
         lockedTextDelegate.locked = !lockingSwitch.on
     }
@@ -29,7 +30,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // TODO: assign delegates
+        // assign delegates
         zipCodeTextField.delegate = zipCodeDelegate
         cashTextField.delegate = cashDelegate
         switchTextField.delegate = lockedTextDelegate
