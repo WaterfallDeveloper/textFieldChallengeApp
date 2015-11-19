@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 class CashDelegate:NSObject, UITextFieldDelegate {
-    var cashAmount = 0
+    var cashInPennies = 0
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         
@@ -17,16 +17,21 @@ class CashDelegate:NSObject, UITextFieldDelegate {
 //        let newText = String(textField.text!.characters.dropFirst())
         
         if Int(string) != nil {
-           cashAmount = Int("\(cashAmount)\(string)")!
+           cashInPennies = Int("\(cashInPennies)\(string)")!
         }
         
-        textField.text = "$\(Float(cashAmount) / 100)"
+        let dollarInt = cashInPennies/100
+        let dollarString: String = "$" + "\(dollarInt)" + "."
+        let centsString: String =  String(cashInPennies % 100)
+        let finalString = dollarString + centsString
+        
+        textField.text = finalString
         
         return true
     }
     
     func textFieldDidBeginEditing(textField: UITextField) {
-        cashAmount = 0
+        cashInPennies = 0
         textField.text = "$0.00"
         
     }
